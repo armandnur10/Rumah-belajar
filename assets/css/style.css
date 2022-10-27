@@ -202,6 +202,10 @@ header{
     min-height: calc(100vh - 120px);
     background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
     color: white;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-text{
@@ -216,12 +220,117 @@ header{
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px 0;
 }
-.about-title::after{
+.about-title-head::after{
     content: "";
     width: 100%;
     background: white;
     border-radius: 5px;
     height: 5px;
+    margin: 0 0 20px 0;
+}
+.about-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-list .about-title-list{
+    margin: 0 0 20px 0;
+}
+
+.about-title-list:after{
+    width: 100%;
+    content: "";
+    height: 5px;
+    border-radius: 5px;
+    background: white;
+}
+
+.about-container{
+    width: 100%;
+    height: 240px;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.about-container .about-item{
+    /* border: 1px solid white; */
+    flex-grow: 1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-item p{
+    width: 220px;
+    text-align: center;
+    font-weight: 800;
+    padding: 26px 0 0 0;
+    font-size: 18px;
+}
+
+/* Margin About Box Item */
+
+.about-container .about-item:nth-child(2),
+.about-container .about-item:nth-child(3)
+{
+    margin: 0 25px;
+}
+.about-item:nth-child(1){
+    margin: 0 25px 0 0;
+}
+.about-item:nth-child(4){
+    margin: 0 0 0 25px;
+}
+
+/* Background Color */
+
+.orange{
+    background: var(--secondary-ligh-color);
+}
+.green{
+    background: var(--primary-light-color);
+}
+.blue{
+    background: var(--secondary-color);
+}
+
+.about-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-text p{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stroke-register{
+    width: 300px;
+    border-top: 5px dotted white;
+}
+.register-item{
+    width: 360px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: var(--primary-light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
