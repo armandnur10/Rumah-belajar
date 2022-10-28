@@ -259,10 +259,27 @@
             </div>
         </div>
         <div class="form-input">
-
+            <form name="comment">
+                <h1>Pesan Untuk Kami</h1>
+                <p>Isi formmulir dibawah ini untuk membantu kemajuan kami</p>
+                <br>
+                <p>E-mail</p>
+                <input type="email" name="email" placeholder="" required>
+                <p>Nama Kamu</p>
+                <input type="text" name="nama" placeholder="" required>
+                <p>Pesan Kamu</p>
+                <textarea type="text" name="pesan" placeholder="" required></textarea>
+                <br>
+                <br>
+                <button type="submit" name="button">Kirim Pesan</button>
+            </form>
         </div>
     </div>
-
+    
+    <div class="callout" id="callout">
+        <div class="callout-header" id="call-text">Succes send the message</div>
+        <span class="closebtn" onclick="this.parentElement.style.right ='-100%';">×</span>
+      </div> 
 
     <div class="event" id="event">
         <div class="galery-title">
@@ -326,7 +343,6 @@
         </div>
         <div class="footer-copyright">this website make by visual studio code copyright &copy armand</div>
     </div>
-
     <script src="./assets/javascript/main.js"></script>
 
     <script type="module">
