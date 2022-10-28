@@ -139,7 +139,7 @@ header {
 
 .on-scroll {
     position: fixed;
-    right: -800px;
+    right: -46rem;
 }
 
 .on-scroll:hover {
