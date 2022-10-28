@@ -530,7 +530,7 @@ header {
 }
 
 
-.stroke-sp a{
+.stroke-sp a {
     width: 9rem;
     height: 30px;
     position: absolute;
@@ -709,33 +709,29 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: #616161 0px 0px 10px;
-  }
-  
-  .callout-header {
+}
+
+.callout-header {
     padding: 40px;
     background: var(--primary-color);
-    font-size: 1re,;
+    font-size: 1re, ;
     color: white;
-  }
-  
-  .closebtn {
+}
+
+.closebtn {
     position: absolute;
     top: 5px;
     right: 15px;
     color: white;
     font-size: 2rem;
     cursor: pointer;
-  }
-  
-  .closebtn:hover {
+}
+
+.closebtn:hover {
     color: lightgrey;
-  }
+}
 
-
-
-
-
-.event{
+.event {
     width: 100%;
     display: flex;
     align-items: center;
@@ -743,7 +739,7 @@ header {
     color: white;
 }
 
-.event-container{
+.event-container {
     margin: 5rem 0;
     width: 60rem;
     background: var(--primary-light-color);
@@ -753,92 +749,99 @@ header {
     align-items: center;
 }
 
-.event-title{
+.event-title {
     margin: 1rem 0;
     font-size: 1.8rem;
     font-weight: 800;
 }
 
-.event-desc{
+.event-desc {
     width: calc(100% - 8rem);
     margin: 1rem 0;
 }
 
-.event-text{
+.event-text {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-ul.event-list{
+ul.event-list {
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: 1rem 0;
 }
 
-.event-list li{
+.event-list li {
     font-weight: 800;
     margin: 1.5rem 0;
 }
 
-.footer{
+.footer {
     padding: 3rem 0 0 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
     color: white;
 }
 
-.footer-container{
+.footer-container {
     width: calc(100% - var(--body-m-v));
-    display: grid;
-    grid-template-areas: 
-    "desc desc social social"
-    "desc desc social social"
-    "desc desc social social"
-    "desc desc social social"
-    "copy copy copy copy";
-}
-
-.footer-desc{
-    grid-area: desc;
-    border: 1px solid #8CC63F;
     display: flex;
-    box-sizing: content-box;
+
 }
 
-.footer-desc img{
+.footer-desc {
+    display: flex;
+    width: 50%;
+}
+
+.footer-desc img {
     margin: 1rem;
+    width: 10rem;
+    height: 10rem;
 }
 
-.footer-text{
+.footer-text {
     padding: 1rem;
-    height: 12rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer-text li{
+.footer-text li {
     list-style: none;
 }
 
-.icon-footer{
+.icon-footer {
     width: 12rem;
 }
 
-.footer-social{
-    grid-area: social;
-    border: 1px solid #e9e7e7;
+.footer-social {
+    width: 50%;
 }
 
-.footer-copyright{
-    grid-area: copy;
-    border: 1px solid #F7931E;
+.footer-social>div {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.footer-social i {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.footer-social div p {
+    width: 30rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.footer-copyright {
     padding: 1rem;
     color: white;
+    width: 90vw;
 }
-
-
-
