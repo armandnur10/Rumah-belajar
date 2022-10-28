@@ -589,6 +589,8 @@ header {
     content: "";
   }
   
+
+  
   @media screen and (max-width: 1130px) {
     :root{
         font-size: 14px;
