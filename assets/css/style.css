@@ -59,6 +59,7 @@ header {
     justify-content: end;
     align-items: center;
     transition: 2s;
+    z-index: 9999;
 }
 
 .nav {
@@ -132,6 +133,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .on-scroll {
@@ -656,7 +658,7 @@ header {
 .form-input form {
     width: 100%;
     height: 80%;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 
@@ -728,82 +730,6 @@ header {
   .closebtn:hover {
     color: lightgrey;
   }
-
-
-
-@media screen and (max-width: 1130px) {
-    :root {
-        font-size: 14px;
-    }
-
-
-    .home {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home-title {
-        width: 100%;
-        align-items: center;
-        margin: 2rem 0;
-        text-align: center;
-    }
-
-    .title-info {
-        justify-content: center;
-        margin: 2rem 0;
-    }
-
-    .home-img {
-        margin: 2rem 0;
-    }
-
-
-    .superior {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .superior>div {
-        width: 100%;
-        margin: 2rem 0;
-    }
-
-    .superior .sp-content {
-        border-radius: 20px;
-        width: 70%;
-    }
-
-}
-
-@media screen and (max-width: 840px) {
-    :root {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    :root {
-        font-size: 7px;
-    }
-
-    .nav-logo {
-        display: none;
-    }
-
-    .about-title {
-        font-size: 20px;
-    }
-
-    .register-container {
-        flex-direction: column;
-    }
-
-    .stroke-register {
-        display: none;
-    }
-}
-
 
 
 
