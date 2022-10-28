@@ -140,7 +140,7 @@ header {
 
 .on-scroll {
     position: fixed;
-    right: -800px;
+    right: -46rem;
 }
 
 .on-scroll:hover {
@@ -393,8 +393,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     margin-top: 100px;
-    margin: 2rem 0;
+    margin: 5rem 0;
 }
 
 .superior>div {
@@ -496,7 +497,6 @@ header {
     width: 9rem;
     height: 30px;
     margin: 20px 0;
-    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,8 +531,10 @@ header {
     transform: rotate(-50deg) translateX(-1.4rem);
 }
 
-.stroke-sp a {
-    width: 100%;
+
+.stroke-sp a{
+    width: 9rem;
+    height: 30px;
     position: absolute;
     z-index: 100;
 }
