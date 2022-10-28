@@ -356,7 +356,7 @@ header {
     margin-top: 100px;
 }
 
-.superior div {
+.superior > div {
     height: 90%;
     width: 48%;
     /* border: 1px solid; */
@@ -443,21 +443,47 @@ header {
     justify-content: center;
     align-items: center;
     color: #F7931E;
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 700;
 }
 
-.sp-img :nth-child(3) {
-    height: 5%;
-    width: 40%;
+
+.stroke-sp{
     display: flex;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
+    transition: .5s;
 }
 
-.sp-img :nth-child(3) div {
-    height: 6px;
+.stroke-sp::before{
+    content: "";
     width: 50%;
-    background-color: black;
-    border-radius: 100px;
+    height: 5px;
+    transform: translateX(5px);
+    background: black;
+    transition: .5s;
+    border-radius: 10px;
 }
+.stroke-sp::after{
+    content: "";
+    width: 50%;
+    height: 5px;
+    background: black;
+    transform: translateX(-5px);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.stroke-sp:hover::before{
+    transform: rotate(50deg) translateX(22px);
+}
+
+.stroke-sp:hover::after{
+    transform: rotate(-50deg) translateX(-22px);
+}
+
