@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rumah Belajar</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -161,11 +164,128 @@
             <div>
                 <p>Lihat Galeri</p>
             </div>
-            <div class="stroke-sp"></div>
+            <div class="stroke-sp"><a href="#galery"></a></div>
+        </div>
+    </div>
+
+    <div class="galery" id="galery">
+        <div class="galery-title">
+            Galeri Kami
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/1.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/2.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/3.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/4.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/5.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/6.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/7.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/8.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/9.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/10.jpeg" alt="">
+                </div>
+
+
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/11.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/12.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/13.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/14.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/15.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/16.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/17.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/18.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/19.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/Assets/img/img-galery/20.jpeg" alt="">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </div>
 
     <script src="./assets/javascript/main.js"></script>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+      </script>
 </body>
 
 </html>
